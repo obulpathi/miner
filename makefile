@@ -2,7 +2,7 @@
 
 mine:
 	cd ~/ptsminer/src
-	./ptsminer -pooluser=PeiwKjzDHu9He7Ei6wdqdna6m2j7p5Au1M -poolpassword=0 -poolip=pts.rpool.net -poolport=2336 -genproclimit=8
+	./ptsminer -pooluser=PoGJ72YpWwsxti7KAef4EiSxSkUT3tLmTn -poolpassword=0 -poolip=pts.rpool.net -poolport=2336 -genproclimit=8
 
 install:
 	sudo apt-get update
