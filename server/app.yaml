@@ -1,0 +1,42 @@
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /style\.css
+  static_files: style.css
+  upload: style\.css
+
+- url: /dashboard\.css
+  static_files: dashboard.css
+  upload: dashboard\.css
+
+- url: /holder\.js
+  static_files: holder.js
+  upload: holder\.js
+    
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /_ah/spi/.*
+  script: services.server
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /.*
+  script: main.application
+
+libraries:
+- name: jinja2
+  version: latest
+- name: PIL
+  version: latest
+- name: webapp2
+  version: latest
+- name: pycrypto
+  version: latest
+- name: endpoints
+  version: latest
